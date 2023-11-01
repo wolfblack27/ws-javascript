@@ -1,15 +1,19 @@
 const criarPessoa = function(nome, sobrenome,idade){
 
-    return {
+    return{
         nome,
         sobrenome,
-        idade
-    }
-
+        idade,
     
 
+    fala: function(){
+        console.log("Estou falando " + this.nome)
+
+    }
+
+}
 };
 
 
 pessoa1 = criarPessoa('Thiago','dos Santos',36)
-console.log(pessoa1.idade)
+pessoa1.fala()
