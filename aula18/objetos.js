@@ -17,3 +17,4 @@ const criarPessoa = function(nome, sobrenome,idade){
 
 pessoa1 = criarPessoa('Thiago','dos Santos',36)
 pessoa1.fala()
+ 
