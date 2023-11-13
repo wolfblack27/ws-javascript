@@ -92,6 +92,7 @@ window.addEventListener("load", () => {
        
        
         form.reset()
+        nome.focus()
         
         
 
