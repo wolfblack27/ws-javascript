@@ -39,12 +39,31 @@ const pessoa = function (nome, peso, altura) {
             return pesos
              
 
-        }
+        },
+
+        calculoIMC: function () {
+        return ((parseFloat(this.peso)) / (Math.pow(this.altura, 2))).toFixed(2)},
 
     }
 
 }
 
+criarResultado= function(saidaPessoa,tbodyResultado ){
+    const trResultado = document.createElement("tr");
+   
+    for (chave in saidaPessoa){
+        console.log(saidaPessoa[chave])
+        
+        const tdResultado = document.createElement("td");
+        const dado = document.createTextNode(`${saidaPessoa[chave]}`);
+        tdResultado.appendChild(dado)
+        trResultado.appendChild(tdResultado)
+        
+
+    }
+    tbodyResultado.appendChild(trResultado)
+
+}
 
 window.addEventListener("load", () => {
     console.log("SVG loaded.");
@@ -53,12 +72,27 @@ window.addEventListener("load", () => {
     const nome = form.querySelector('.nome')
     const peso = form.querySelector('.peso')
     const altura = form.querySelector('.altura')
+    const tableResultado = document.querySelector('.tableResultado')
+    const tbodyResultado = tableResultado.querySelector('.tbodyResultado')
+    
+    //const data = document.createElement("tr");
+    //const node = document.createTextNode("This is new.");
+    //data.appendChild(node)
+    //tdResultado.appendChild(para)
+
+    console.log(tbodyResultado)
     
     
     form.addEventListener('submit',(envento)=>{
         envento.preventDefault();
         p1 = pessoa(nome.value,peso.value,altura.value )
-        resposta.innerHTML=` Dados: ${p1.listar()} - ${p1.imc()} - ${p1.pesoIdeal([18.5,25])}`
+        const saidaPessoa={'nome':p1.nome,'peso':p1.peso,'altura':p1.altura,'imc':p1.calculoIMC(),'grau':p1.imc(),'pesoIdeal':p1.pesoIdeal([18.60,25]) }
+       
+        criarResultado(saidaPessoa,tbodyResultado)
+       
+       
+        form.reset()
+        
         
 
     });

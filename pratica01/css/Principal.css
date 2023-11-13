@@ -1,0 +1,30 @@
+.principal {
+    text-align: center;
+    color: rgb(0, 140, 255);
+    float: left;
+    margin: 40px;
+   /* border: 1px solid aqua;*/
+    
+
+  }
+
+  input {
+   margin-left: 0px;
+   text-align: center;
+   border-color: aliceblue;
+
+}
+
+.tableResultado{
+    border-collapse: collapse;
+    text-align: center;
+    color: sienna;
+    border: 1px solid;
+}
+th,td{
+
+    padding: 15px;
+    text-align: left;
+    color: sienna;
+    border: 1px solid;
+}
