@@ -18,3 +18,9 @@ Aula33:
 
 Aula34:
 - Estrutura de repetição
+
+Aula36:
+- Estrutura de repeticao FOR IN
+
+Aula37:
+- Estrutura de repetiçao FOR OF e FOREACH
