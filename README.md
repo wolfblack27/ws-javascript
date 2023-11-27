@@ -1,6 +1,10 @@
 # ws-javascript
 Curso JavaScript
 
+
+Aula 17:
+- Functions em javascript
+
 Aula27: 
 - Operador ternario
 
