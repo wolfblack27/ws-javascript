@@ -28,3 +28,18 @@ Aula36:
 
 Aula37:
 - Estrutura de repetiçao FOR OF e FOREACH
+
+Aula39:
+- Estrutura de repetição While e Do While
+
+Aula40:
+- Instruções: break e continue
+
+Aula44:
+- Lancamento de erros (try/cath)
+- Lancamento de erros (throw)
+
+
+Aula45: 
+- SetTimeout
+- SetInterval

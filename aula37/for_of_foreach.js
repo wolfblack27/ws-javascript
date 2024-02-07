@@ -6,7 +6,7 @@ console.log(valor)
 
 }
 
-//Obtem o valor, indice e array
+//Obtem o valor, indice e array ()
 
 nomes.forEach(function(valor,indice,array){
 
