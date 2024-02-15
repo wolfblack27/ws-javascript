@@ -36,10 +36,16 @@ Aula40:
 - Instruções: break e continue
 
 Aula44:
-- Lancamento de erros (try/cath)
+- Tratamento de erros (try/cath)
 - Lancamento de erros (throw)
 
 
 Aula45: 
 - SetTimeout
 - SetInterval
+
+Aula50:
+- Parametros  e argumentos da função
+
+Aula51:
+- Retorno da Função
