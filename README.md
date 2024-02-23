@@ -49,3 +49,15 @@ Aula50:
 
 Aula51:
 - Retorno da Função
+
+Aula 52:
+ - Escopo lexico
+
+Aula54;
+ - CallBack
+
+Aula55:
+ - Funções IIFE
+
+Aula56:
+ - Funções Factory
