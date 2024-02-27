@@ -53,11 +53,26 @@ Aula51:
 Aula 52:
  - Escopo lexico
 
-Aula54;
+Aula 54:
  - CallBack
 
-Aula55:
+Aula 55:
  - Funções IIFE
 
-Aula56:
+Aula 56:
  - Funções Factory
+
+Aula 58:
+ - Funções Construtoras
+
+Aula 62:
+ - Arrays avançado
+
+Aula 63
+ - Arrays avancado : Splice
+
+Aula 64
+ - Arrays: concatenando
+
+Aula 65
+ - Filtrando Array: Filter
