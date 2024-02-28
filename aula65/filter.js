@@ -1,4 +1,7 @@
 
+// Filter retorna somente verdadeiro e falso para a condição da função, 'não modifica valores'
+//filter ela tambem passa os parametros (valor,indice, array)
+
 /*
 //Filtrando maiores que 10
 const numeros = [5,50,80,1,2,3,5,8,7,11,15,22,27];
@@ -25,12 +28,19 @@ console.log('Segunda opção',numerosFiltrados.sort());
 */
 
 
+
+
+
+
+
+
 /*
 Exemplos de filtros aplicado aos objetos:
 1 - retorne as pessoas que tem nome com 5 letras
 2 - retorne as pessoas com mais de 50
 3 - retorne as pessoas cujo nome termina com 'a'
 * */
+/*
 const pessoas = [
                     {nome:'Thiago',idade:62},
                     {nome:'Junior',idade:23},
@@ -61,3 +71,28 @@ const pessoasTerminadasA = pessoas.filter((valor)=>{
     return valor.nome.toLowerCase().endsWith('a');
 });
 console.log('terminadas com A',pessoasTerminadasA);
+
+*/
+
+
+
+//Comparando array objetos
+const pessoas = [ 
+    { nome: 'Joao', num: 1     },
+    { nome: 'Maria', num: 2     },
+    { nome: 'Fulano', num: 3    }
+    ];
+
+function compare(a,b) {
+  if (a.nome < b.nome)
+     return -1;
+  if (a.nome > b.nome)
+    return 1;
+  return 0;
+}
+
+pessoas.sort((a,b)=>{
+    return a.nome<b.nome?-1: a.nome>b.nome?1:0
+});
+console.log(pessoas)
+

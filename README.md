@@ -74,5 +74,8 @@ Aula 63
 Aula 64
  - Arrays: concatenando
 
-Aula 65
+Aula 65:
  - Filtrando Array: Filter
+
+Aula 66:
+ - Mapeando Arrays: MAP
