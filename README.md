@@ -79,3 +79,9 @@ Aula 65:
 
 Aula 66:
  - Mapeando Arrays: MAP
+
+Aula 67:
+ - Reduce : reduzindo o array
+
+Aula 69:
+ - ForEach: interando usando o mais avançado de For

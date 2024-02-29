@@ -83,6 +83,9 @@ const pessoas = [
     { nome: 'Fulano', num: 3    }
     ];
 
+
+//Podemos passar como funcao da sort (que tem dois parametros)
+//pessoas.sort(compare)
 function compare(a,b) {
   if (a.nome < b.nome)
      return -1;
@@ -91,8 +94,10 @@ function compare(a,b) {
   return 0;
 }
 
+
 pessoas.sort((a,b)=>{
     return a.nome<b.nome?-1: a.nome>b.nome?1:0
 });
 console.log(pessoas)
+
 
