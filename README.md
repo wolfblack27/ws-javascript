@@ -85,3 +85,12 @@ Aula 67:
 
 Aula 69:
  - ForEach: interando usando o mais avançado de For
+
+Aula 70:
+ - Revisão de objetos
+
+Aula 71:
+ - Comportamento dos atributos
+ - Object.defineproperty
+ - Object.keys(objeto)
+ - Object.defineProperties
