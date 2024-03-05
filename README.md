@@ -94,3 +94,7 @@ Aula 71:
  - Object.defineproperty
  - Object.keys(objeto)
  - Object.defineProperties
+
+Aula 72:
+ - metodo get (obter)
+ - metodo set (setar,atribuir)
