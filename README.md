@@ -98,3 +98,7 @@ Aula 71:
 Aula 72:
  - metodo get (obter)
  - metodo set (setar,atribuir)
+
+Aula 74 : 
+ - Prototypes
+ - Setprototype
