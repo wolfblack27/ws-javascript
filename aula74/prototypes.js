@@ -68,7 +68,10 @@ const p3 = Object.create(Produto.prototype,{
         configurable:true,
         enumerable:true,
         value:'M'
-    }
+    },
+    
+    
 })
+
+
 p3.aumento(10);
-console.log(p3.nome)

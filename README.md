@@ -102,3 +102,9 @@ Aula 72:
 Aula 74 : 
  - Prototypes
  - Setprototype
+
+Aula 76:
+ - Prototype Herança
+
+Aula 78:
+ - Prototype Polimorfismo
