@@ -108,3 +108,7 @@ Aula 76:
 
 Aula 78:
  - Prototype Polimorfismo
+
+Aula 79:
+ - Factory Function: Prototype
+ 
