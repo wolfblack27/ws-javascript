@@ -111,4 +111,12 @@ Aula 78:
 
 Aula 79:
  - Factory Function: Prototype
- 
+
+Aula 80:
+ - Map em Objetos
+
+Aula 80B:
+ -  Criando Classes
+
+Aula 81:
+ - Classes : getters e setters

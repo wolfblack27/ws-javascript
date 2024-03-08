@@ -22,6 +22,8 @@ function criaPessoa(nome,sobrenome){
 */
 
 
+
+
 //2 modo vamos desacoplar as funções do escopo (objeto pessoa)
 
 //Funções fora do escopo criaPessoa
