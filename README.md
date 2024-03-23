@@ -120,3 +120,15 @@ Aula 80B:
 
 Aula 81:
  - Classes : getters e setters
+
+Aula 82:
+ - Classes: metodos estaticos
+
+Aula 86:
+ - Promises: Como usar promises para atividades assincronas
+
+Aula 87:
+ - Metodos para Promises
+
+Aula 88:
+ - Async e Await

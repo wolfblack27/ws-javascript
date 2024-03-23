@@ -32,11 +32,14 @@ desligar(){
 
 
 
+
+
 //Cria uma classe filho de Dispositivo
 class SmartPhone extends DispositivoEletronico{
     constructor(nome,valor){
         super(nome)
         this.valor = valor;
+        
     }
 
     //Sobreescrita do metodo
@@ -54,4 +57,11 @@ class SmartPhone extends DispositivoEletronico{
 }
 
 const smart = new SmartPhone('Sangung',1200);
-console.log(smart.ligar());
+const tablet = new SmartPhone('LG',700);
+console.log(smart);
+console.log(tablet);
+
+window.addEventListener('load',(event)=>{
+
+    alert(event.type);
+})
