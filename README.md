@@ -132,3 +132,12 @@ Aula 87:
 
 Aula 88:
  - Async e Await
+
+Aula 93:
+ - Projeto com Nodejs, principio.
+
+Aula 94:
+ - Modelo de Nodejs para uso em aula
+
+Aula 95:
+ - Criando um gerador de CPF
