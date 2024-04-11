@@ -1,0 +1,57 @@
+Comandos:
+1 - No diretorio onde o npm vai ser instalado digitamos:Nome da pasta deve ser avaliado, para não conflitar.
+    - npm init -> para versão mas longa
+    - npm iniy -y -> versão ams curta
+
+2 - Instalar pacotes:
+    -npm install <nome do pacote> ou npm install <nome do pacote>
+        Quando instalamos o "^" que aparece na versão do pacote, significa que pode atualizar a versão. É baixado a ultima versão
+    
+    -npm install -E <nome do pacote>: instala a versão, mas não tem atualizacao
+        Quando atualizamos podemos perder compartibilidade com outras versões
+    
+    -npm install <nome do pacote> --save-dev : usado para pacotes que estão presentes na fase de desenvolvimento
+
+    -npm install <nome do pacote> --save-prod : usado para pacotes que estão presentes na fase de producao
+
+    -npm install <nome do pacote>@<versao>: instala a versão desejada
+    -npm install <nome do pacote>@<versao> numeroDaVersao.x : isso indica que ele ira baixar o major.. Por exemplo: npm install express@4.x
+
+    
+
+
+3 - Atualizar pacote
+    -npm update: atualiza todas as dependencias
+
+
+
+4 - Desistalar pacote
+    -npm uninstall <pacote>
+
+
+
+5 - Listar pacote
+    -npm ls: lista os pacotes dependentes, visualizando até as pastas dependentes para resolver isso podemos colocar:
+        npm ls --depth=0: mostra apenas o que foi instalado
+        npm ls --depth=1: mostra o pacote e mais um nivel de pastas dependentes
+
+
+
+6 - Verificando pacotes desatualizados:
+    -npm outdated : lista os pacotes desatualizados
+
+
+
+
+Observações Sobre Atualização:
+    Sobre a versão:
+        As versões segue esta regra:
+            versão: 2.   1.   0:
+                2-> major: quando este numero muda, quebramos a compartibilidaded com versões anteriores
+                1-> minor: recebe alguams atualizações
+                0->path: ele mantem totalmente a compartibilidade
+    
+    Quando a versão esta acompanhada de ^2.1.0, siginifica que o npm irá atualizar o "minor" e o "path"
+    Quando a versão esta acompanhada de ~2.1.0, significa que ira atulizar apenas o "path" 
+
+

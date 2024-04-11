@@ -141,3 +141,19 @@ Aula 94:
 
 Aula 95:
  - Criando um gerador de CPF
+
+
+-Pasta Nodejs:
+
+Aula 01:
+ - Usando module.exports
+
+Aula 03:
+ - Usando modelue.exports com mais recursos: path
+
+Aula 03:
+  - Comandos importantes com o gerenciador de pacotes NPM
+
+Aula 04 :
+ - Trabalhando com arquivos
+ - Resolvendo caminhos com o modulo "path" 
