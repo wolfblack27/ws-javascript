@@ -1,0 +1,9 @@
+Para usar o nodemon (biblioteca de desenvolvimento) que atualiza qualquer modificação no servidor:
+1 - digitamos no terminal: npm install nodemon --save-dev
+2 - Para rodar:
+    1-Opção: digitamos npx nodemon <arquivo que esta a rota>
+            Nosso exemplo: npx nodemon server.js
+    
+    2-opção: Vamos no arquivo package.json e mudamos no atributo 'script'
+            e colocamos: "start": "nodemon server.js".
+            Agora podemos digitar no terminal: npm star 

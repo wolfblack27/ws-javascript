@@ -157,3 +157,7 @@ Aula 03:
 Aula 04 :
  - Trabalhando com arquivos
  - Resolvendo caminhos com o modulo "path" 
+
+Aula 05 :
+ - Escrevendo arquivos
+ - Lendo arquivos
