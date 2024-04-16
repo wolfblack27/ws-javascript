@@ -161,3 +161,15 @@ Aula 04 :
 Aula 05 :
  - Escrevendo arquivos
  - Lendo arquivos
+
+Aula 06:
+ - Iniciando o servidor Node
+ - Inicial de rotas
+
+Aula 08:
+ - Iniciando rotas no servidor
+ - Trabalhando com os parametros: req e resp da função rota
+
+Aula09:
+ - Trabalhando com routes
+ - Iniciando com Controllers

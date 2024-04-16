@@ -1,0 +1,28 @@
+Rotas em modulos:
+
+1 - Devemos trabalhar com rotas dedicadas, cada uma dentro de um modulo, agrupada por função:
+    Na raiz do projeto podemos criar o arquivo route.js, arquivo no qual teremos o escopo da rotas
+    que recebe de outro modulo uma função apra tratar aquela rota
+    Exemplo:
+            const express = require('express');
+            const route = express.Router();
+            const homeController = require('./controllers/homeController')//Importação do modulo que trata a rota
+
+            route.get('/',homeController.paginaInical); //criamos o objeto route.get que recebe a <rota>, <funcao de tratamento da chamada>
+            module.exports=route;
+        
+    Na pasta controller devemos criar o modulo que realmente implementa o tratamento da rota e exportar:
+    Exemplo:
+            exports.paginaInical=(req,res)=>{
+            res.send(`
+            <form action='/postteste' method='POST'>
+            Nome do Cliente: <input type ='text' name='nome'>
+            <button>Enviar</button>
+            </form>
+
+            `)
+
+            }
+
+    No arquivo main(index) devemos importar a rota
+    Exemplo: const routes = require('./routes');

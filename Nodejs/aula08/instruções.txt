@@ -1,0 +1,56 @@
+Criando rotas no servidor:
+
+1 - Devemos instalar o pacote 'express', que nos permite trabalhar com rotas: npm install express
+2 - Devemos importar as bibliotecas: const express = require('express')
+                                                    const app = express()
+3 - Com o objeto criado já podemos configurar as rotas
+4 - Cada rota criada recebe dois parametros: req e resp
+    req: é a propria requisição, onde podemos ter alguns parametros
+    resp:é o que for enviado como resposta da solicitação
+
+
+Trabalhando com req:
+
+1 - Podemos obter parte da queryString:
+    Exemplo: 
+            app.get('/testes/:idCliente?',(req,res)=>{
+            res.send(`Seu parametro: ${req.params.idCliente}`)
+            })
+    Note que com o auxilio do '?' o parametro é opcional, e a rota resposnde mesmo sem ele
+
+    Exemplo: Onde obtemos a queryString com os parametros enviados:
+            app.get('/testes/:idCliente?/:parametros?',(req,res)=>{
+            console.log(req.query) //parametros enviados no corpo
+            res.send(`Seu parametro vindo do enredeco: ${req.params.idCliente}.`) // como query é um objeto, podemos obter a variavel enviado na rquisição
+})
+
+2 - Trabalhando com POST
+    Para trabalhar com o post devemos criar uma função nativa app.use e passar o express.urlencoded:
+    Nota: a propriedade 'name' do DOM é usada como chave para ter acesso ao valor
+        Exemplo:
+
+
+            
+            app.get('/',(req,res)=>{
+                res.send(`
+                            <form action='/postteste' method='POST'>
+                            Nome do Cliente: <input type ='text' name='nome'>
+                            <button>Enviar</button>
+                            </form>
+                
+                `)
+            });
+
+
+            app.use(
+                express.urlencoded(
+                    {
+                        extended:true
+                    }
+                )
+            );
+
+            app.post('/postteste',(req,res)=>{
+                console.log(req.body)
+                res.send(`<h1>Obrigado por enviar: ${req.body.nome} </h1>`) //Observe que o atributo name vindo do DOM tem o valor nome, e será ele a chave para obter o valor
+            })
