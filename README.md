@@ -173,3 +173,11 @@ Aula 08:
 Aula09:
  - Trabalhando com routes
  - Iniciando com Controllers
+
+Aula10:
+ - Trabalhando com view
+ - pacote 'ejs': renderização da pagina
+
+Aula11:
+ - Trabalhando com arquivos estaticos
+ 

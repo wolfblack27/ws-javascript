@@ -1,0 +1,14 @@
+Arquivos estaticos:
+
+Para trabalahr com conteudo estaticos:
+
+1 - Na raiz do projeto devemos criar a pasta public
+
+2 - No app.use, no arquivo de config do projeto:
+        app.use(express.static(path.resolve(__dirname,'public'))); //Conteudo estatico
+
+3 - Para testar:
+        npm start
+        digitar apos o localhost<porta>/<nome do arquivo dentro de public.extensão>
+        Exemplo:
+                http://localhost:3000/teste.txt

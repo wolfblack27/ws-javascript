@@ -1,0 +1,10 @@
+Renderização View:
+- Para renderizar o html, temos que usar um 'engine', no nosso exemplo vmaos usar a 'ejs',
+que é bem proxima do html
+
+Baixar dependencia:
+-npm install ejs
+
+Configurando o app.use: No app (documento com a config do servidor)
+-app.set('views',path.resolve(__dirname,'src','views')); //caminho absoluto
+-app.set('view engine','ejs'); //setando a engine
