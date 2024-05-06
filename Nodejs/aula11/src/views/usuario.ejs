@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>User Page</title> 
+    <style type="text/css" media="screen"> 
+        body { 
+            background-color: skyblue; 
+            text-decoration-color: white; 
+            font-size: 5em; 
+            padding: 10px;
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    Lista dos <%=data.titulo%> :<br /> 
+  
+        <ul style="list-style-type: upper-latin; margin: 40px;"> 
+            <% data.usuarios.forEach((user)=>{%> 
+                <li> 
+                    <%=user%> 
+                </li> 
+                <%});%> 
+        </ul> 
+</body> 
+</html>
