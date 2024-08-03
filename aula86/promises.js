@@ -35,4 +35,5 @@ esparaAi('Acesso a API',rand(1,5))
     })
 
 
-console.log('Esta instrução ocorre antes do Promise');
+console.log('Esta instrução ocorre antes do Promise'); 
+console.log('aqui')
